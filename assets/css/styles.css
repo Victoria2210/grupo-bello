@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "Made-Tommy-Regular";
+  src: url("../fonts/Made-Tommy-Regular.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Made-Tommy-Bold";
+  src: url("../fonts/Made-Tommy-Bold.otf");
+  font-display: swap;
+}
+
+/* ============================================ */
+/*   GENERALES   */
+/* ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  background-color: #2e8166;
+}
+
+h2 {
+  font-family: "Made-Tommy-Regular";
+  color: #2e8166;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 6px #00000029;
+  letter-spacing: 0px;
+}
+
+h5 {
+  font-family: "Made-Tommy-Regular";
+  color: #03181d;
+  margin-bottom: 0px;
+}
+
+h6 {
+  font-family: "Made-Tommy-Regular";
+  color: #2e8166;
+  margin-bottom: 0px;
+}
+
+a,
+p,
+label,
+.swal2-confirm.swal2-styled,
+.input-group-text,
+.btn-enviar,
+.form-control,
+.form-select {
+  font-family: "Made-Tommy-Regular" !important;
+  font-size: 10pt;
+}
+
+.btn {
+  font-family: "Made-Tommy-Bold";
+  height: 30px;
+  padding: 0.1rem 1rem;
+  border-radius: 8px;
+}
+
+.btn-primary,
+.swal2-confirm.swal2-styled {
+  background-color: #00637d;
+  border-color: #00637d;
+}
+
+.btn-primary:hover {
+  background-color: #007a99;
+  border-color: #007a99;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #007a99;
+  border-color: #007a99;
+  box-shadow: 0 0 0 0.2rem rgba(0, 122, 153, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #00637d;
+  border-color: #00637d;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #007a99;
+  border-color: #007a99;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 122, 153, 0.5);
+}
+
+section {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.d-desktop {
+  display: block;
+}
+
+.d-mobile {
+  display: none;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .d-desktop {
+    display: none;
+  }
+
+  .d-mobile {
+    display: block;
+  }
+}
+
+/* ============================================ */
+/*   HEADER   */
+/* ============================================ */
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: auto !important;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0 !important;
+  margin-right: 5% !important;
+  margin-left: 0 !important;
+  display: block !important;
+  left: auto !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  display: block !important;
+  height: 30px !important;
+  width: 5px !important;
+}
+
+.carousel-caption {
+  top: calc(50% - 5.5rem);
+  /* top: calc(50% - 57.94px); */
+  bottom: auto !important;
+  text-align: end;
+}
+
+.carousel-caption > h1,
+.carousel-caption > h2 {
+  font-family: "Made-Tommy-Regular";
+  text-shadow: 0px 3px 6px #00000052;
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: none;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .carousel-caption {
+    top: calc(50% - 3.5rem);
+  }
+
+  .carousel-caption > h1,
+  .carousel-caption > h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ============================================ */
+/*   NAVBAR   */
+/* ============================================ */
+
+.navbar {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #2e8166 !important;
+}
+
+.collapse {
+  text-align: center;
+}
+
+.collapse.navbar-collapse,
+.collapse.navbar-collapse .row {
+  height: 41.94px;
+}
+
+.collapse.navbar-collapse .row .col-md-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar.navbar-shrink {
+  transition: background-color 300ms linear;
+  background-color: #fff;
+}
+
+.navbar a {
+  text-transform: uppercase;
+}
+
+#nav-quienes-somos.active,
+#nav-que-hacemos.active,
+#nav-nuestro-grupo.active,
+#nav-contacto.active {
+  border-bottom: 4px solid #2e8166;
+}
+
+/* ============================================ */
+/*   QUIENES SOMOS   */
+/* ============================================ */
+
+.card-team {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card-team img {
+  margin-bottom: 1rem;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+}
+
+/* ============================================ */
+/*   QUIENES SOMOS   */
+/* ============================================ */
+
+#quienes-somos {
+  position: relative;
+}
+
+#quienes-somos .line {
+  width: 75%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  background-color: #2e8166;
+  z-index: 1;
+}
+
+#quienes-somos img {
+  width: 100%;
+  max-width: 300px;
+}
+
+#quienes-somos img.image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  #quienes-somos .col-md-5 {
+    padding: 0px;
+    margin-bottom: 2rem;
+  }
+
+  #quienes-somos .col-md-6 {
+    padding: 0px;
+  }
+}
+
+/* ============================================ */
+/*   QUE HACEMOS   */
+/* ============================================ */
+
+#que-hacemos {
+  background-image: url("../img/background-que-hacemos.png");
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#que-hacemos .container-icon {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #c0dee6;
+  height: 100px;
+  width: 100px;
+  border-radius: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+#que-hacemos .container-icon img {
+  height: 60px;
+  width: 60px;
+}
+
+#que-hacemos .col-md-3 {
+  min-width: 170px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  #que-hacemos .col-md-3 {
+    width: 50%;
+    min-width: auto;
+  }
+}
+
+/* ============================================ */
+/*   NUESTRO EQUIPO   */
+/* ============================================ */
+
+@media (min-width: 0px) and (max-width: 768px) {
+  #nuestro-grupo .row .col-md-4:first-child,
+  #nuestro-grupo .row .col-md-4:nth-child(2n) {
+    margin-bottom: 2rem !important;
+  }
+
+  #nuestro-grupo .row .col-md-4 {
+    padding: 0px !important;
+  }
+}
+
+/* ============================================ */
+/*   FOOTER   */
+/* ============================================ */
+
+footer {
+  background-image: url("../img/background-footer.png");
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer .contain-icon {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+footer .col-md-12,
+footer .col-md-6 {
+  padding-left: 0px;
+}
+
+footer .col-md-8 {
+  border-left: 1px solid #0b637c;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer .col-md-8 > div {
+  max-width: 600px;
+  width: 100%;
+}
+
+.input-group-text,
+.form-select,
+.form-control {
+  background-color: transparent;
+  border: 1px solid #0b637c;
+  margin-bottom: 1rem;
+}
+
+.form-control.input-group-input{
+  border-left: none !important;
+}
+
+.input-group-text{
+  border-right: none !important;
+  height: 33.98px !important;
+  background-color: transparent;
+}
+
+.form-select {
+  height: 33.98px !important;
+}
+
+.img-equipo{
+  border-radius: 10px;
+  text-shadow: 0px 3px 6px #00000029;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
+.form-control::-moz-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+.form-control::placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+/* .form-control::-moz-placeholder {
+  background-color: #faf6f3;
+}
+.form-control::placeholder {
+  background-color: #faf6f3;
+} */
+
+@media (min-width: 0px) and (max-width: 768px) {
+  footer {
+    padding-top: 4rem !important;
+  }
+
+  footer .col-md-12,
+  footer .col-md-6 {
+    padding-right: 0px;
+  }
+
+  footer .col-md-8 {
+    border-left: none !important;
+    padding-top: 2rem;
+  }
+}
